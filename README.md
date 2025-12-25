@@ -111,12 +111,11 @@ Customer-Churn-Prediction-Segmentation-Using-Machine-Learning/
 
 ## 🎥 Demo
 
-## 🎥 Demo
+### Video Preview
 
 Watch the application in action:
 
-<video src="./Churn.mp4" controls width="100%">
-  Your browser does not support the video tag.
+<video src="https://private-user-images.githubusercontent.com/170353978/530191711-57e595bd-1de7-4374-ae5b-8e2eb423b49c.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY2NTg5NzcsIm5iZiI6MTc2NjY1ODY3NywicGF0aCI6Ii8xNzAzNTM5NzgvNTMwMTkxNzExLTU3ZTU5NWJkLTFkZTctNDM3NC1hZTViLThlMmViNDIzYjQ5Yy5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIyNVQxMDMxMTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zYWVkM2Y0N2JmMWIyOTYwNTQ5YmE4ODU1YmQ0YjY2NjhiZmUxOWI0NDFjZWY1YTFiODM1NTVlN2Q0ODA0NGNhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.O1cknuBfouqyZ7AbGMO_nGYYLNNsA9L3GJQp1COy2y8" controls="controls" style="max-width: 100%;">
 </video>
 
 Or view directly:
