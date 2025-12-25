@@ -48,7 +48,7 @@ This project combines supervised and unsupervised machine learning techniques to
 git clone https://github.com/Akchiche-Mohamed-Aymen/Customer-Churn-Prediction-Segmentation-Using-Machine-Learning.git
 
 ```
-2.**Go to project folder**
+2. **Go to project folder**
 ```bash
 cd Customer-Churn-Prediction-Segmentation-Using-Machine-Learning
 ```
