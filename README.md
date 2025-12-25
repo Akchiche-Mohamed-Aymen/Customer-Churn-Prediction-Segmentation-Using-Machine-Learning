@@ -94,7 +94,6 @@ py -m streamlit run UI.py
 The application will open in your default web browser, where you can:
 - Input customer data
 - Get churn predictions
-- View customer segments
 - Receive AI-powered retention recommendations
 
 ## 📊 Project Structure
@@ -112,17 +111,18 @@ Customer-Churn-Prediction-Segmentation-Using-Machine-Learning/
 
 ## 🎥 Demo
 
-### Video Preview
+## 🎥 Demo
 
 Watch the application in action:
 
-[![Watch Demo Video](https://img.shields.io/badge/▶️-Watch%20Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](./Churn.mp4)
+<video src="./Churn.mp4" controls width="100%">
+  Your browser does not support the video tag.
+</video>
 
 Or view directly:
 
 https://github.com/Akchiche-Mohamed-Aymen/Customer-Churn-Prediction-Segmentation-Using-Machine-Learning/Churn.mp4
 
-> Replace `YOUR_VIDEO_URL_HERE` with your YouTube/Vimeo link, or replace the GitHub path with your repository details.
 
 ## 🤝 Contributing
 
