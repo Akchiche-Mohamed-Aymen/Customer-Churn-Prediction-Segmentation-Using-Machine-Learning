@@ -33,7 +33,6 @@ This project combines supervised and unsupervised machine learning techniques to
 - **AI Framework**: LangChain for intelligent recommendations
 - **UI Framework**: Streamlit
 - **Data Processing**: Pandas, NumPy
-- **Visualization**: Matplotlib, Seaborn
 
 ## 📦 Installation
 
@@ -47,10 +46,13 @@ This project combines supervised and unsupervised machine learning techniques to
 1. **Clone the repository**
 ```bash
 git clone https://github.com/Akchiche-Mohamed-Aymen/Customer-Churn-Prediction-Segmentation-Using-Machine-Learning.git
+
+```
+2.**Go to project folder**
+```bash
 cd Customer-Churn-Prediction-Segmentation-Using-Machine-Learning
 ```
-
-2. **Install dependencies**
+3. **Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
