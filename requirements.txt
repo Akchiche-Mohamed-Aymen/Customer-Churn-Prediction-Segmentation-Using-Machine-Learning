@@ -1,0 +1,7 @@
+numpy
+pandas
+scikit-learn
+langchain-core
+langchain_google_genai
+streamlit
+pikle
