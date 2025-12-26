@@ -84,8 +84,16 @@ Train the Random Forest classifier for churn prediction:
 ```bash
 py supervised.py
 ```
-
-### Step 5: Launch the Application
+### Step 5 Getting Gemini API Key
+1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey)
+2. Click "Create API Key" to generate your Gemini API key
+3. In your project folder, create a new file called keys.py
+4. Add the following line to keys.py:
+   ```bash
+   key = "your_gemini_api_key_here"
+   ```
+5. Replace "your_gemini_api_key_here" with your actual API key from Google AI Studio
+### Step 6: Launch the Application
 Start the interactive Streamlit dashboard:
 ```bash
 py -m streamlit run UI.py
