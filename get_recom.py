@@ -6,7 +6,7 @@ from langchain_core.prompts import PromptTemplate
 from keys import key
 
 #==================================================
-def createRecommandations(churn, churn_probability):
+def getRecommandations(churn, churn_probability):
     responseClass = ChurnOne if churn == 1 else ChurnZero
     chat =  ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
@@ -48,3 +48,24 @@ Context:
     ]
     response = chat.invoke(messages)
     return parser.parse(response.content)
+
+def createRecommandations(churn, churn_probability):
+    try:
+        return getRecommandations(churn, churn_probability)
+    except:
+        recommandation = {}
+        if churn == 1:
+            recommandation['immediate_contact'] = "Contact the customer within 24 hours to address concerns."
+            recommandation['retention_offer'] =  "Provide a personalized retention offer or discount."
+            recommandation['feedback_session'] =  "Schedule a feedback call to understand dissatisfaction."
+            recommandation['account_review']="Review recent account activity to identify issues."
+            recommandation['personalized_service']="Assign a dedicated account manager if applicable."
+            recommandation['product_upgrade'] = "Offer a trial of premium features to increase value."
+        else:
+            recommandation['maintain_engagement'] ="Maintain regular communication with the customer."
+            recommandation['loyalty_rewards'] ="Reward loyalty with points, discounts, or perks."
+            recommandation['upsell_opportunities'] ="Introduce relevant additional products or services."
+            recommandation['regular_monitoring'] ="Continue monitoring engagement and usage patterns."
+            recommandation['value_addition'] ="Share useful tips, insights, or educational content."
+            recommandation['vip_treatment'] ="Acknowledge and appreciate the customer’s loyalty."
+        return recommandation

@@ -3,11 +3,9 @@ from typing import Optional
 
 class ChurnOne(BaseModel):
     immediate_contact: Optional[str] = Field(
-        default="Contact the customer within 24 hours to address concerns.",
         description="Reach out to customer within 24 hours"
     )
     retention_offer: Optional[str] = Field(
-        default="Provide a personalized retention offer or discount.",
         description="Special offers or incentives"
     )
     feedback_session: Optional[str] = Field(
