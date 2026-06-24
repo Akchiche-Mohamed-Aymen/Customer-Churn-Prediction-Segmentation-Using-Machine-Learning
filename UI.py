@@ -129,8 +129,7 @@ st.markdown('<p class="sub-header">Predict customer churn probability using adva
 
 # Sidebar for inputs
 with st.sidebar:
-    st.markdown("### 📝 Customer Information")
-    st.markdown("---")
+    st.subheader("### 🤖 Google AI Configuration")
     st.markdown(
     """
     ### Google AI API Key
@@ -138,12 +137,16 @@ with st.sidebar:
     https://aistudio.google.com/app/apikey
     """
 )
-
     api_key = st.text_input(
     "Enter your Google AI Studio API Key",
     type="password",
     placeholder="AIza..."
 )
+    st.markdown("### 📝 Customer Information")
+    st.markdown("---")
+    
+
+    
     # Personal Information
     st.markdown("#### 👤 Personal Details")
     age = st.number_input("Age", min_value=18, max_value=100, value=35, help="Customer's age")
