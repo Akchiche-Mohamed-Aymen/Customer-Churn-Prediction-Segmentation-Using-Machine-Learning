@@ -129,7 +129,7 @@ st.markdown('<p class="sub-header">Predict customer churn probability using adva
 
 # Sidebar for inputs
 with st.sidebar:
-    st.subheader("### 🤖 Google AI Configuration")
+    st.markdown("### 🤖 Google AI Configuration")
     st.markdown(
     """
     ### Google AI API Key
