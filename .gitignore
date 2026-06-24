@@ -1,5 +1,3 @@
 data_for classification.csv
-kmeans_model.pkl
-prepped_data.csv
-best_k.json
-keys.py
+
+

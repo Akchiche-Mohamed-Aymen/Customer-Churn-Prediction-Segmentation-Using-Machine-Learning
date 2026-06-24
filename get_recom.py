@@ -3,10 +3,9 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage , SystemMessage
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import PromptTemplate
-from keys import key
 
 #==================================================
-def getRecommandations(churn, churn_probability):
+def getRecommandations(churn, churn_probability , key):
     responseClass = ChurnOne if churn == 1 else ChurnZero
     chat =  ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
@@ -49,9 +48,9 @@ Context:
     response = chat.invoke(messages)
     return parser.parse(response.content)
 
-def createRecommandations(churn, churn_probability):
+def createRecommandations(churn, churn_probability , api_key):
     try:
-        return getRecommandations(churn, churn_probability)
+        return getRecommandations(churn, churn_probability , api_key)
     except:
         recommandation = {}
         if churn == 1:

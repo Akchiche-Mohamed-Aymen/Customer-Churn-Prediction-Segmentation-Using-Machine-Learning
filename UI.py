@@ -131,7 +131,19 @@ st.markdown('<p class="sub-header">Predict customer churn probability using adva
 with st.sidebar:
     st.markdown("### 📝 Customer Information")
     st.markdown("---")
-    
+    st.markdown(
+    """
+    ### Google AI API Key
+    Get your API key from:
+    https://aistudio.google.com/app/apikey
+    """
+)
+
+    api_key = st.text_input(
+    "Enter your Google AI Studio API Key",
+    type="password",
+    placeholder="AIza..."
+)
     # Personal Information
     st.markdown("#### 👤 Personal Details")
     age = st.number_input("Age", min_value=18, max_value=100, value=35, help="Customer's age")
@@ -216,7 +228,7 @@ if predict_button:
     with st.spinner("🔄 Analyzing customer data..."):
         churn_prediction, churn_probability = predict_churn(data)
         st.markdown("---")
-        recommandations = createRecommandations(churn_prediction, churn_probability)
+        recommandations = createRecommandations(churn_prediction, churn_probability , api_key)
         if churn_prediction == 1:
             st.markdown(f"""
                 <div class="result-positive">
